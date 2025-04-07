@@ -3,7 +3,7 @@ Gets to 99.25% test accuracy after 12 epochs
 (there is still a lot of margin for parameter tuning).
 16 seconds per epoch on a GRID K520 GPU.
 '''
-# Modified on 2025. 04. 07 by BGKim
+#Modified on 2024.04.07 by subin
 
 from __future__ import print_function
 import keras
@@ -43,8 +43,8 @@ x_test = x_test.astype('float32')
 x_train /= 255
 x_test /= 255
 print('x_train shape:', x_train.shape)
-#print(x_train.shape[0], 'train samples')
-#print(x_test.shape[0], 'test samples')
+##print(x_train.shape[0], 'train samples')
+##print(x_test.shape[0], 'test samples')
 
 # convert class vectors to binary class matrices
 y_train = keras.utils.to_categorical(y_train, num_classes)
