@@ -43,8 +43,8 @@ x_test = x_test.astype('float32')
 x_train /= 255
 x_test /= 255
 print('x_train shape:', x_train.shape)
-##print(x_train.shape[0], 'train samples')
-##print(x_test.shape[0], 'test samples')
+#print(x_train.shape[0], 'train samples')
+#print(x_test.shape[0], 'test samples')
 
 # convert class vectors to binary class matrices
 y_train = keras.utils.to_categorical(y_train, num_classes)
@@ -87,7 +87,7 @@ plt.show()
 
 
 ##-- Model Test using Test datasets 
-#print()
+##print()
 print("----Actual test for digits----")
 img = Image.open('dataset_test/testimgs/1.png').convert("L")
 img = np.resize(img, (28,28,1))
